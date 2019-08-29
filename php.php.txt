@@ -1,0 +1,33 @@
+	<?php
+	$conn=new mysqli("localhost","root","","selab");
+	$fid =$_SESSION['id'];
+	$sql="select pid,rid,quantity,orderDate from ordertable ;
+	$result=$conn->query($sql);
+	if($result->num_rows>0)
+	{
+	while($row=$result->fetch_assoc())
+	{
+echo "<tr>";
+
+echo "<td>".$row['quantity']."</td>;
+
+echo "<td>".$row['orderDate']."</td>;
+
+echo "</tr>";
+	}
+
+<html>
+<head>
+<title>Online Job Portal</title>
+</head>
+<body>
+<table width="600" border="1" cellpadding="1" cellspacing="1">
+<tr>
+
+
+<th>pid</th>
+<th>rid</th>
+<th>quantity</th>
+<th>orderDate</th>
+
+</tr>

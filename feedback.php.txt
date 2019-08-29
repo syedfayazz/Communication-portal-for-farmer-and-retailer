@@ -1,0 +1,13 @@
+<html>
+	<link href="body.css" rel="stylesheet">
+		<body>
+	<br><br>
+	<div id="d1"><br>
+		<label id="label1">Communication Portal for Farmer and Retailer</label>
+		<a href=""><img src="farmer.jpg" id="img1" width="50" height="50"></a>
+		<a href=""><img src="profile.jpg" id="img2" width="50" height="50"></a>
+		 
+	</div><br><br><br><br>
+
+	</body>
+</html>
